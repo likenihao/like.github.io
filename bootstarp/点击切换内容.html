@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    * {margin:0; padding:0;}
+    li {list-style: none;}
+    .clearfix:after {clear: both;height: 0;overflow: hidden;display: block;visibility: hidden;content: "."; font-size: 0;}
+    .clearfix {zoom: 1;}
+    .none {display:none;}
+    .menu {width: 100%; display:block; }
+    .menu ul li {float: left; margin:0px 10px;}
+    .content {width: 100%; display: block; }
+    .con1 { height:300px; background: #ccc; }
+
+
+    </style>
+</head>
+<body>
+    <div class="menu clearfix">
+        <ul>
+            <li>按钮一</li>
+            <li>按钮二</li>
+            <li>按钮三</li>
+            <li>按钮四</li>
+        </ul>
+    </div>
+    <div class="content clearfix">
+        <div class="con1">11111</div>
+        <div class="con1 none">22222</div>
+        <div class="con1 none">33333</div>
+        <div class="con1 none">444444</div>
+
+    </div>
+    
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script>
+    $(function(){
+
+        $('.menu li').click(function () {
+            $(this).addClass('active').siblings().removeClass('active');
+            ///$('.tab-top li').eq($(this).index()).addClass('active').siblings().removeClass('active');  tab按钮第二种写法
+            var index=$(this).index();
+            $(".content .con1").eq(index).show().siblings().hide();
+        })
+
+
+
+    })
+    
+    </script>
+</body>
+</html>

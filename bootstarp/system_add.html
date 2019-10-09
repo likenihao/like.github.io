@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>like</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap style 公用样式 -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome 小图标样式   公用样式-->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style 主题样式   公用样式 -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- Skins style皮肤样式   公用样式 -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <!-- DataTables table表格样式 -->
+  <link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <!-- checkboxes、radio样式 -->
+  <link rel="stylesheet" href="plugins/iCheck/all.css">
+  <!--datepicker 日期控件样式-->
+  <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- toastr 弹出层样式 -->
+  <!-- <link rel="stylesheet" href="plugins/toastr/toastr.min.css"> -->
+  <!--editor 编辑器样式-->
+  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+
+  <link rel="stylesheet" href="css/base.css">
+  <!-- Morris chart -->
+
+</head>
+
+<body class="hold-transition skin-blue-light sidebar-mini">
+  <div class="wrapper">
+    <!---头部开始--->
+    <header class="main-header fixed_top">
+      <!-- Logo -->
+      <a href="index2.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>E</b>AP</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>Admin</b>EAP</span>
+      </a>
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+          <span class="sr-only">Toggle navigation</span>
+        </a>
+
+        <div class="navbar-custom-menu">
+          <ul class="nav navbar-nav">
+            <!-- Messages: style can be found in dropdown.less-->
+            <li class="dropdown messages-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-envelope-o"></i>
+                <span class="label label-success">4</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header">You have 4 messages</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li>
+                      <!-- start message -->
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                          Support Team
+                          <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <!-- end message -->
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                          AdminLTE Design Team
+                          <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                          Developers
+                          <small><i class="fa fa-clock-o"></i> Today</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                          Sales Department
+                          <small><i class="fa fa-clock-o"></i> Yesterday</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="pull-left">
+                          <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                        </div>
+                        <h4>
+                          Reviewers
+                          <small><i class="fa fa-clock-o"></i> 2 days</small>
+                        </h4>
+                        <p>Why not buy a new awesome theme?</p>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer"><a href="#">See All Messages</a></li>
+              </ul>
+            </li>
+            <!-- Notifications: style can be found in dropdown.less -->
+            <li class="dropdown notifications-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-bell-o"></i>
+                <span class="label label-warning">10</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header">You have 10 notifications</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                        page and may cause design problems
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-users text-red"></i> 5 new members joined
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-shopping-cart text-green"></i> 25 sales made
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa fa-user text-red"></i> You changed your username
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="footer"><a href="#">View all</a></li>
+              </ul>
+            </li>
+            <!-- Tasks: style can be found in dropdown.less -->
+            <li class="dropdown tasks-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-flag-o"></i>
+                <span class="label label-danger">9</span>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="header">You have 9 tasks</li>
+                <li>
+                  <!-- inner menu: contains the actual data -->
+                  <ul class="menu">
+                    <li>
+                      <!-- Task item -->
+                      <a href="#">
+                        <h3>
+                          Design some buttons
+                          <small class="pull-right">20%</small>
+                        </h3>
+                        <div class="progress xs">
+                          <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
+                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <span class="sr-only">20% Complete</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- end task item -->
+                    <li>
+                      <!-- Task item -->
+                      <a href="#">
+                        <h3>
+                          Create a nice theme
+                          <small class="pull-right">40%</small>
+                        </h3>
+                        <div class="progress xs">
+                          <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar"
+                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <span class="sr-only">40% Complete</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- end task item -->
+                    <li>
+                      <!-- Task item -->
+                      <a href="#">
+                        <h3>
+                          Some task I need to do
+                          <small class="pull-right">60%</small>
+                        </h3>
+                        <div class="progress xs">
+                          <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar"
+                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <span class="sr-only">60% Complete</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- end task item -->
+                    <li>
+                      <!-- Task item -->
+                      <a href="#">
+                        <h3>
+                          Make beautiful transitions
+                          <small class="pull-right">80%</small>
+                        </h3>
+                        <div class="progress xs">
+                          <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar"
+                            aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                            <span class="sr-only">80% Complete</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <!-- end task item -->
+                  </ul>
+                </li>
+                <li class="footer">
+                  <a href="#">View all tasks</a>
+                </li>
+              </ul>
+            </li>
+            <!-- User Account: style can be found in dropdown.less -->
+            <li class="dropdown user user-menu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <span class="hidden-xs">LIKE</span>
+              </a>
+              <ul class="dropdown-menu">
+                <!-- User image -->
+                <li class="user-header">
+                  <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                  <p>
+                    LIKE - Web
+                  </p>
+                </li>
+                <!-- Menu Body -->
+                <li class="user-body">
+                  <div class="row">
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Followers</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Sales</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Friends</a>
+                    </div>
+                  </div>
+                  <!-- /.row -->
+                </li>
+                <!-- Menu Footer-->
+                <li class="user-footer">
+                  <div class="pull-left">
+                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  </div>
+                  <div class="pull-right">
+                    <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!---头部结束--->
+    <!---左边菜单开始---->
+    <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p>like</p>
+            <a href="#"><i class="fa fa-circle text-success"></i> 普通用户</a>
+          </div>
+        </div>
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+          <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Search...">
+            <span class="input-group-btn">
+              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+              </button>
+            </span>
+          </div>
+        </form>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-calculator"></i> <span>数据列表</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="index.html"><i class="fa fa-circle-o"></i> 用户列表-Dailog</a></li>
+              <li><a href="userlist1.html"><i class="fa fa-circle-o"></i> 用户列表-Tab</a></li>
+              <li><a href="userlist2.html"><i class="fa fa-circle-o"></i> 用户列表-数据权限</a></li>
+              <li><a href="userlist3.html"><i class="fa fa-circle-o"></i> 用户列表-列编辑</a></li>
+              <li><a href="userlist4.html"><i class="fa fa-circle-o"></i> 用户列表-行编辑</a></li>
+            </ul>
+          </li>
+          <li class="treeview active">
+            <a href="#">
+              <i class="fa fa-wrench"></i>
+              <span>系统工具</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li class="active"><a href="system1.html"><i class="fa fa-circle-o"></i> 我的文章</a></li>
+              <li><a href="system2.html"><i class="fa fa-circle-o"></i> 任务管理器</a></li>
+              <li><a href="system3.html"><i class="fa fa-circle-o"></i> 消息管理</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-tv"></i>
+              <span>系统管理</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="manage1.html"><i class="fa fa-circle-o"></i> 用户管理</a></li>
+              <li><a href="manage2.html"><i class="fa fa-circle-o"></i> 组织机构管理</a></li>
+              <li><a href="manage3.html"><i class="fa fa-circle-o"></i> 角色管理</a></li>
+              <li><a href="manage4.html"><i class="fa fa-circle-o"></i>角色授权</a></li>
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-edit"></i>
+              <span>工作流管理</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="workflow1.html"><i class="fa fa-circle-o"></i> 委拖管理</a></li>
+              <li><a href="workflow2.html"><i class="fa fa-circle-o"></i> 工作流模型</a></li>
+              <li><a href="workflow3.html"><i class="fa fa-circle-o"></i> 工作流定义</a></li>
+              <li><a href="workflow4.html"><i class="fa fa-circle-o"></i> 工作流实例</a></li>
+
+            </ul>
+          </li>
+          <li class="treeview">
+            <a href="#">
+              <i class="fa fa-bars"></i> <span>工作流Demo</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li><a href="workdemo1.html"><i class="fa fa-circle-o"></i> 请假事例</a></li>
+              <li><a href="workdemo2.html"><i class="fa fa-circle-o"></i> 培训管理</a></li>
+              <li><a href="workdemo3.html"><i class="fa fa-circle-o"></i> 实验室三审</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+    <!---左边菜单结束---->
+
+    <!--右边主内容开始-->
+    <div class="content-wrapper mt50">
+      <!--面包屑开始 -->
+      <section class="content-header">
+        <h1>
+          系统工具-我的文章
+        </h1>
+        <ol class="breadcrumb">
+          <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+          <li><a href="#">系统工具</a></li>
+          <li class="active">我的文章</li>
+        </ol>
+      </section>
+      <!--面包屑结束 -->
+      <!-- 编辑主要内容开始 -->
+      <section class="content">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="box">
+              <!-- /.box-header -->
+              <div class="dataTables_filter text-right ipnut-width p10">
+                <h5 class="pull-left">新增文章</h5>
+                <input type="text" name="name" class="form-control" placeholder="请输入文章标题">
+                <input type="text" name="name" class="form-control" placeholder="请输入关键字">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-primary">查询</button>
+                  <button type="button" class="btn btn-default">重置</button>
+                </div>
+                <button type="button" class="btn btn-default"><i class="fa fa-pencil"></i>&nbsp;新增文章</button>
+              </div>
+              <div class="box-body pad" style="padding-top:0px;">
+                  <form>
+                      <textarea id="editor1" name="editor1" rows="10" cols="80">
+                                              This is my textarea to be replaced with ditor.
+                      </textarea>
+                </form>
+                <br/>
+                <form>
+                <textarea class="textarea" placeholder="Place some text here"
+                    style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                </form>
+              </div>
+              <!-- /.box-body -->
+            </div>
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </section>
+      <!-- 编辑主要内容结束 -->
+    </div>
+    <!--右边主内容结束-->
+    <!--右边版权开始 -->
+    <footer class="main-footer">
+      <div class="pull-right hidden-xs">
+        <b>Version</b> 2.4.12
+      </div>
+      <strong>Copyright &copy; 2019-2024 <a href="">AdminEAP</a>.</strong> All rights
+      reserved.
+    </footer>
+    <!--右边版权结束 -->
+   
+    <!---删除信息弹出层开始---->
+
+    <div class="modal fade del_message">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title inline">确认提示</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            是否要删除该行数据？
+          </div>
+          <div class="modal-footer justify-content-between">
+            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-remove"></i>取消</button>
+            <button type="button" class="btn btn-primary"><i class="fa fa-save"></i>确认</button>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+    <!----删除信息弹出层结束----->
+
+
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery3 公用js -->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- jQuery UI 1.11.4 公用js-->
+  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+  <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+  <!-- Bootstrap 3.3.7 公用js-->
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- AdminLTE App 公用js-->
+  <script src="dist/js/adminlte.min.js"></script>
+  <!-- 保持左边导航打开的状态 -->
+  <!-- DataTables table表格js-->
+  <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <!-- iCheck 1.0.1 -->
+  <script src="plugins/iCheck/icheck.min.js"></script>
+  <!-- datepicker 日期控件js -->
+  <script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <!-- 弹出层js-->
+  <!-- <script src="plugins/toastr/toastr.min.js"></script> -->
+  <!-- Editor 编辑器js -->
+  <script src="bower_components/ckeditor/ckeditor.js"></script>
+  <!-- WYSIHTML5 编辑器js  -->
+  <script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+
+  <script>
+    ////// 左侧导航默认打开 公用js
+    $.widget.bridge('uibutton', $.ui.button);
+    ////////
+    $(function () {
+      //////////checkbox radio 样式
+      $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+        checkboxClass: 'icheckbox_minimal-blue',
+        radioClass: 'iradio_minimal-blue'
+      });
+      //////////////日期控件
+      $('#start_birthday').datepicker({
+        autoclose: true
+      });
+      $('#end_birthday').datepicker({
+        autoclose: true
+      });
+      $('.end_birthday1').datepicker({
+        autoclose: true
+      });
+      $('#datepicker').datepicker({
+        autoclose: true
+      });
+      //////////弹出层垂直居中对齐
+      $(".btn-add").click(function () {
+        var height = window.innerHeight;
+        var item_height = 450;
+        var top = (height - item_height) / 2;
+        if (top <= 0) {
+          top = 0;
+        };
+        $("#add_user").attr("style", "padding-top:" + top + "px");
+        $("#add_user").modal("show");
+      });
+
+      //////删除信息弹出层
+      $(".btn-del").click(function () {
+        var height = window.innerHeight;
+        var item_height = 175;
+        var top = (height - item_height) / 2;
+        if (top <= 0) {
+          top = 0;
+        };
+        $(".del_message").attr("style", "padding-top:" + top + "px");
+        $(".del_message").modal("show");
+      });
+
+      /////表格里的升序降序排列
+      $('#markdown_table').DataTable({
+        'paging': false,
+        'lengthChange': false,
+        'searching': false,
+        'ordering': true,
+        'info': false,
+        'autoWidth': false,
+        ////第一列不排序
+        "aoColumnDefs": [{"bSortable": false, "aTargets": [0, 2, 3] }],
+        "aaSorting": [[1, "desc"]]
+        /////
+        });
+      ///////////
+      ////////编辑器
+      CKEDITOR.replace('editor1')
+      $('.textarea').wysihtml5();
+      //////
+      
+
+
+
+
+
+
+    })
+  </script>
+
+</body>
+
+</html>

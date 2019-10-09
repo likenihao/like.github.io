@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1266027_ovlb8niq5r.css">
+    <link rel="stylesheet" href="../css/commonCart.css">
+    <link href="../css/order.css" rel="stylesheet">
+    <title>PrductDetail</title>
+</head>
+<body>
+        <input type="hidden" id="isHome" value="0"/>
+    <!---search开始--->
+    <!-- <div class="head_top" style="position: fixed;z-index:5000;width: 100%;"> -->
+    <div class="header_warp">
+        <div class="header">
+            <ul>
+                <li class="a1">
+                    <div class="input_search clearfix">
+                        <input type="text" name="search" class="input_text" placeholder="">
+                        <i class="piconfont piconsousuo"></i>
+                    </div>
+                </li>
+                <li class="a2"><i class="piconfont piconwo"></i>
+                    <div class="sanjiao"></div>
+                    <ol>
+                        <li class="tmenu_ico_01"><a href="#">My Profile</a></li>
+                        <li class="tmenu_ico_02"><a href="#">My Orders</a></li>
+                        <li class="tmenu_ico_03"><a href="#">Log Out</a></li>
+                    </ol>
+                </li>
+                <li class="a3 openCart"><i class="piconfont picongouwuche"></i><em>CART</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!---search结束--->
+    <!---导航开始--->
+    <div class="nav_bg">
+        <div class="nav_content">
+            <div class="nav_warp">
+                <div class="logo"><img src="../images/logo.png" alt="potek"></div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">MSW Inverters
+                                <div class="line"></div>
+                            </a>
+                            <dl>
+                                <dt>
+                                    <ol>
+                                        <ol><a href="#">Under 999 Watts</a></ol>
+                                        <ol><a href="#">1000 to 2999 Watts</a></ol>
+                                        <ol><a href="#">3000 Watts &Above</a></ol>
+                                    </ol>
+                                </dt>
+                                <dd><a href="#"><img src="../pic/ps_01.png" alt=""></a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <a href="product.html">PSW Inverters<div class="line"></div></a>
+                            <dl>
+                                <dt>
+                                    <a href="#">1000 to 2999 Watts</a>
+                                </dt>
+                                <dd><a href="#"><img src="../pic/ps_01.png" alt=""></a></dd>
+                            </dl>
+                            
+                        </li>
+                        <li>
+                            <a href="pro_detail.html">Power Source<div class="line"></div></a>
+                            <dl>
+                                <dt>
+                                    <a href="#">Jump Starter</a>
+                                    <a href="#">Battery Charger</a>
+                                    <a href="#">Power Station</a>
+                                </dt>
+                                <dd><a href="#"><img src="../pic/ps_01.png" alt=""></a></dd>
+                            </dl>
+                            
+                        </li>
+                        <li>
+                            <a href="order_01.html">Support<div class="line"></div></a>
+                            <dl>
+                                <dt>
+                                    <a href="#">Download Manuals</a>
+                                    
+                                    <a href="#">Guarantee & Return</a>
+                                    <a href="#">Shipping & Tracking</a>
+                                    <a href="#">Contact Us</a>
+                                </dt>
+                                <dd><a href="#"><img src="../pic/ps_01.png" alt=""></a></dd>
+                            </dl>
+                            
+                        </li>
+                        <li>
+                            <a href="pay_s.html">About<div class="line"></div></a>
+                            <dl>
+                                <dt>
+                                    <a href="#">Our Company</a>
+                                    <a href="#">Blog</a>
+                                    <a href="#">Buy on Amazon</a>
+                                    <a href="#">Buy on eBay</a>
+                                </dt>
+                                <dd><a href="#"><img src="../pic/ps_01.png" alt=""></a></dd>
+                            </dl>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu_line"></div>
+        </div>
+    </div>
+    <!---导航结束--->
+    <!--cartwarp-start-->
+    <div class="J-global-toolbar">
+        <div class="toolbar-wrap J-wrap">
+            <div class="toolbar">
+                <div class="toolbar-panels J-panel">
+                    <div style="visibility: hidden;"
+                        class="J-content toolbar-panel tbar-panel-cart toolbar-animate-out">
+                        <h3 class="tbar-panel-header J-panel-header">
+                            <a href="" class="title"><i></i><em class="title">My Cart</em></a>
+                            <span class="close-panel J-close openCart"></span>
+                        </h3>
+                        <div class="tbar-panel-main">
+                            <div class="tbar-panel-content J-panel-content">
+                                <div id="J-cart-tips" class="tbar-tipbox hide">
+                                    <div class="tip-inner">
+                                        <span class="tip-text">还没有登录，登录后商品将被保存</span>
+                                        <a href="#none" class="tip-btn J-login">登录</a>
+                                    </div>
+                                </div>
+                                <div id="J-cart-render">
+                                    <div class="tbar-cart-list">
+                                        <div class="tbar-cart-item">
+                                            <div class="jtc-item-goods">
+                                                <span class="p-img"><a href="#" target="_blank"><img
+                                                            src="../pic/04.jpg"
+                                                            alt="美的（Midea） BCD-206TM(E) 206升静音/省电/三门冰箱（闪白银）" height="50"
+                                                            width="50" /></a></span>
+                                                <div class="p-name">
+                                                    <a href="#">PowerPort Atom III </a>
+                                                </div>
+                                                <div class="p-price"><strong>¥1398.00</strong>×1 </div>
+                                                <div class="numwarp">
+                                                    <a><i class="piconfont piconiconfront-"></i></a><input
+                                                        autocomplete="off" type="text" maxlength="20" value="9"><a><i
+                                                            class="piconfont piconzengjia-01"></i></a>
+                                                </div> <a href="#none"
+                                                    class="p-del J-del piconfont piconiconfont-shanchu" alt="Delete"
+                                                    title="Delete"></a>
+                                            </div>
+                                            <div class="jtc-item-goods">
+                                                <span class="p-img"><a href="#" target="_blank"><img
+                                                            src="../pic/04.jpg"
+                                                            alt="美的（Midea） BCD-206TM(E) 206升静音/省电/三门冰箱（闪白银）" height="50"
+                                                            width="50" /></a></span>
+                                                <div class="p-name">
+                                                    <a href="#">PowerPort Atom III </a>
+                                                </div>
+                                                <div class="p-price"><strong>¥1398.00</strong>×1 </div>
+                                                <div class="numwarp">
+                                                    <a><i class="piconfont piconiconfront-"></i></a><input
+                                                        autocomplete="off" type="text" maxlength="20" value="9"><a><i
+                                                            class="piconfont piconzengjia-01"></i></a>
+                                                </div> <a href="#none"
+                                                    class="p-del J-del piconfont piconiconfont-shanchu" alt="Delete"
+                                                    title="Delete"></a>
+                                            </div>
+                                            <div class="jtc-item-goods">
+                                                <span class="p-img"><a href="#" target="_blank"><img
+                                                            src="../pic/04.jpg"
+                                                            alt="美的（Midea） BCD-206TM(E) 206升静音/省电/三门冰箱（闪白银）" height="50"
+                                                            width="50" /></a></span>
+                                                <div class="p-name">
+                                                    <a href="#">PowerPort Atom III </a>
+                                                </div>
+                                                <div class="p-price"><strong>¥1398.00</strong>×1 </div>
+                                                <div class="numwarp">
+                                                    <a><i class="piconfont piconiconfront-"></i></a><input
+                                                        autocomplete="off" type="text" maxlength="20" value="9"><a><i
+                                                            class="piconfont piconzengjia-01"></i></a>
+                                                </div> <a href="#none"
+                                                    class="p-del J-del piconfont piconiconfont-shanchu" alt="Delete"
+                                                    title="Delete"></a>
+                                            </div>
+                                            <div class="jtc-item-goods">
+                                                <span class="p-img"><a href="#" target="_blank"><img
+                                                            src="../pic/04.jpg"
+                                                            alt="美的（Midea） BCD-206TM(E) 206升静音/省电/三门冰箱（闪白银）" height="50"
+                                                            width="50" /></a></span>
+                                                <div class="p-name">
+                                                    <a href="#">PowerPort Atom III </a>
+                                                </div>
+                                                <div class="p-price"><strong>¥1398.00</strong>×1 </div>
+                                                <div class="numwarp">
+                                                    <a><i class="piconfont piconiconfront-"></i></a><input
+                                                        autocomplete="off" type="text" maxlength="20" value="9"><a><i
+                                                            class="piconfont piconzengjia-01"></i></a>
+                                                </div> <a href="#none"
+                                                    class="p-del J-del piconfont piconiconfont-shanchu" alt="Delete"
+                                                    title="Delete"></a>
+                                            </div>
+                                            <div class="jtc-item-goods">
+                                                <span class="p-img"><a href="#" target="_blank"><img
+                                                            src="../pic/04.jpg"
+                                                            alt="美的（Midea） BCD-206TM(E) 206升静音/省电/三门冰箱（闪白银）" height="50"
+                                                            width="50" /></a></span>
+                                                <div class="p-name">
+                                                    <a href="#">PowerPort Atom III </a>
+                                                </div>
+                                                <div class="p-price"><strong>¥1398.00</strong>×1 </div>
+                                                <div class="numwarp">
+                                                    <a><i class="piconfont piconiconfront-"></i></a><input
+                                                        autocomplete="off" type="text" maxlength="20" value="9"><a><i
+                                                            class="piconfont piconzengjia-01"></i></a>
+                                                </div> <a href="#none"
+                                                    class="p-del J-del piconfont piconiconfont-shanchu" alt="Delete"
+                                                    title="Delete"></a>
+                                            </div>
+                                            <div class="jtc-item-goods">
+                                                <span class="p-img"><a href="#" target="_blank"><img
+                                                            src="../pic/04.jpg"
+                                                            alt="美的（Midea） BCD-206TM(E) 206升静音/省电/三门冰箱（闪白银）" height="50"
+                                                            width="50" /></a></span>
+                                                <div class="p-name">
+                                                    <a href="#">PowerPort Atom III </a>
+                                                </div>
+                                                <div class="p-price"><strong>¥1398.00</strong>×1 </div>
+                                                <div class="numwarp">
+                                                    <a><i class="piconfont piconiconfront-"></i></a><input
+                                                        autocomplete="off" type="text" maxlength="20" value="9"><a><i
+                                                            class="piconfont piconzengjia-01"></i></a>
+                                                </div> <a href="#none"
+                                                    class="p-del J-del piconfont piconiconfont-shanchu" alt="Delete"
+                                                    title="Delete"></a>
+                                            </div>
+                                            <div class="jtc-item-goods">
+                                                <span class="p-img"><a href="#" target="_blank"><img
+                                                            src="../pic/04.jpg"
+                                                            alt="美的（Midea） BCD-206TM(E) 206升静音/省电/三门冰箱（闪白银）" height="50"
+                                                            width="50" /></a></span>
+                                                <div class="p-name">
+                                                    <a href="#">PowerPort Atom III </a>
+                                                </div>
+                                                <div class="p-price"><strong>¥1398.00</strong>×1 </div>
+                                                <div class="numwarp">
+                                                    <a><i class="piconfont piconiconfront-"></i></a><input
+                                                        autocomplete="off" type="text" maxlength="20" value="9"><a><i
+                                                            class="piconfont piconzengjia-01"></i></a>
+                                                </div> <a href="#none"
+                                                    class="p-del J-del piconfont piconiconfont-shanchu" alt="Delete"
+                                                    title="Delete"></a>
+                                            </div>
+                                            <div class="jtc-item-goods">
+                                                <span class="p-img"><a href="#" target="_blank"><img
+                                                            src="../pic/04.jpg"
+                                                            alt="美的（Midea） BCD-206TM(E) 206升静音/省电/三门冰箱（闪白银）" height="50"
+                                                            width="50" /></a></span>
+                                                <div class="p-name">
+                                                    <a href="#">PowerPort Atom III </a>
+                                                </div>
+                                                <div class="p-price"><strong>¥1398.00</strong>×1 </div>
+                                                <div class="numwarp">
+                                                    <a><i class="piconfont piconiconfront-"></i></a><input
+                                                        autocomplete="off" type="text" maxlength="20" value="9"><a><i
+                                                            class="piconfont piconzengjia-01"></i></a>
+                                                </div> <a href="#none"
+                                                    class="p-del J-del piconfont piconiconfont-shanchu" alt="Delete"
+                                                    title="Delete"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tbar-panel-footer J-panel-footer">
+                            <div class="tbar-checkout">
+                                <div class="jtc-number"> <strong class="J-count">0</strong> item(s)</div>
+                                <div class="jtc-sum"><span>Total：</span><strong class="J-total">¥11300000</strong></div>
+                                <a class="jtc-btn J-btn" href="#none" target="_blank">check out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="toolbar-footer">
+                    <div class="toolbar-tab tbar-tab-top"> <a href="#"> <i class="tab-ico"></i> <em
+                                class="footer-tab-text">Top</em> </a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--cartwarp-end-->
+
+    <!---主要内容开始--->
+    <div class="cleardiv"></div>
+    <div class="order_warp clearfix" style="margin-top:110px;">
+        <!--123开始-->
+        <div class="num_warp clearfix">
+            <div class="order_inner_step">
+                <dl class="curr">
+                    <dt>1</dt>
+                    <dd>Shipping</dd>
+                </dl>
+            </div>
+            <div class="order_inner_line curr"></div>
+            <div class="order_inner_step">
+                <dl>
+                    <dt>2</dt>
+                    <dd>Order Review</dd>
+                </dl>
+            </div>
+            <div class="order_inner_line"></div>
+            <div class="order_inner_step">
+                <dl>
+                    <dt>3</dt>
+                    <dd>Payment</dd>
+                </dl>
+            </div>
+        </div>
+        <!--123结束-->
+        <!-- 订单内容开始-->
+        <div class="order_box clearfix">
+           <!--订单左边开始-->
+           <div class="order_left">
+               <!--one shipping  write开始-->
+               <div class="one_warp ">
+                   <div class="order_title curr">
+                       <h2>1、Shipping</h2>
+                       <a href="">Select from Address Book</a>
+                   </div>
+                   <form action="">
+                       <div class="input_list">
+                           <label>Contact information<em>*</em></label>
+                           <input type="text" placeholder="Example:name@domain.com" >
+                           <p>Your order confirmation will be sent to the email address you provide.</p>
+                           <label style="margin-top:15px;">Shipping address<em>*</em></label>
+                       </div>
+                       <div class="input_list1 list_a">
+                            <label>First Name<em>*</em></label>
+                            <input type="text" >
+                       </div>
+                       <div class="input_list1 list_a list_a_right">
+                            <label>Last Name<em>*</em></label>
+                            <input type="text"  >
+                       </div>
+                       <div class="input_list1 list_a">
+                            <label>Country<em>*</em></label>
+                            <input type="text" value="United States" disabled="disabled" >
+                       </div>
+                       <div class="input_list1 list_a list_a_right">
+                            <label>Zip Code<em>*</em></label>
+                            <input type="text"  >
+                       </div>
+                       <div class="input_list1 list_a">
+                            <label>City<em>*</em></label>
+                            <input type="text" >
+                       </div>
+                       <div class="input_list1 list_a list_a_right">
+                            <label>State/Territory<em>*</em></label>
+                            <input type="text"  >
+                       </div>
+                       <div class="input_list1">
+                            <label>Address Line 1<em>*</em></label>
+                            <input type="text"  >
+                       </div>
+                       <div class="input_list1">
+                            <label>Address Line 2</label>
+                            <input type="text"  >
+                       </div>
+                       <div class="input_list1">
+                            <label>Phone Number<em>*</em></label>
+                            <input type="text"  >
+                       </div>
+                       <div class="input_list">
+                            <label style="margin-top:25px;">Billing address<em>*</em><div class="bill_warp"> <input type="checkbox"><span>same as shipping address</span> </div> </label>
+                       </div>
+                       <div class="input_list1 list_a">
+                            <label>First Name<em>*</em></label>
+                            <input type="text" >
+                       </div>
+                       <div class="input_list1 list_a list_a_right">
+                            <label>Last Name<em>*</em></label>
+                            <input type="text"  >
+                       </div>
+                       <div class="input_list1 list_a">
+                            <label>Country<em>*</em></label>
+                            <input type="text" value="United States" disabled="disabled" >
+                       </div>
+                       <div class="input_list1 list_a list_a_right">
+                            <label>Zip Code<em>*</em></label>
+                            <input type="text"  >
+                       </div>
+                       <div class="input_list1 list_a">
+                            <label>City<em>*</em></label>
+                            <input type="text" >
+                       </div>
+                       <div class="input_list1 list_a list_a_right">
+                            <label>State/Territory<em>*</em></label>
+                            <input type="text"  >
+                       </div>
+                       <div class="input_list1">
+                            <label>Address Line 1<em>*</em></label>
+                            <input type="text"  >
+                       </div>
+                       <div class="input_list1">
+                            <label>Address Line 2</label>
+                            <input type="text"  >
+                       </div>
+                       <div class="input_list1">
+                            <label>Phone Number<em>*</em></label>
+                            <input type="text"  >
+                       </div>
+                       <div class="one_button">
+                          <button>CONTINUE TO ORDER REVIEW</button>
+                       </div>
+
+                   </form>
+               </div>
+               <!--one shipping  write结束-->
+               <!--one edit开始-->
+               <div class="one_edit">
+                    <div class="order_title bg_white">
+                        <h2>1、Shipping</h2>
+                        <a href="">EDIT</a>
+                    </div>
+               </div>
+               <div class="one_eidt_main">
+                   <h3>Contact information</h3>
+                   <div class="one_con">
+                      <p> 123456789@qq.com</p>
+                    </div>
+                   <h3 class="mt20">Shipping address</h3>
+                   <div class="one_con">
+                       <p>guo dong</p>
+                       <p>kunshanhuaqiao</p>
+                       <p><span>Schenectady</span>,<span>New York</span>,<span>United States</span></p>
+                       <p>1234</p>
+                       <p>12345678901</p>
+                   </div>
+                   <h3 class="mt20">Billing address</h3>
+                   <div class="one_con">
+                       <p>guo dong</p>
+                       <p>kunshanhuaqiao</p>
+                       <p><span>Schenectady</span>,<span>New York</span>,<span>United States</span></p>
+                       <p>1234</p>
+                       <p>12345678901</p>
+                   </div>
+
+
+
+
+               </div>
+               <!--one edit结束-->
+               <!---order_view开始-->
+               <div class="order_view_warp">
+                    <div class="order_title curr">
+                        <h2>2、Order Review</h2> 
+                    </div>
+                    <div class="item_cart_con clearfix">
+                        <div class="item_cart">
+                            <h3>Item(s) in Cart(4)</h3>
+                            <a>Edit Order</a>
+                        </div>
+                        <div class="shop_list clearfix">
+                            <div class="shop_con clearfix">
+                                <div class="shop_con_left">
+                                    <dl>
+                                        <dt><img src="../pic/link001.jpg" alt=""></dt>
+                                        <dd>
+                                            <p class="power">500W Power Inverter - Red</p>
+                                            <p class="ship">Shipping: USPS Shipping</p>
+                                        </dd>
+                                    </dl>
+
+                                </div>
+                                <div class="shop_con_right">
+                                    <p class="ship_price">$29.99</p>
+                                    <p class="ship_num">x2</p>
+                                </div>
+                            </div>
+                            <div class="shop_con clearfix">
+                                <div class="shop_con_left">
+                                    <dl>
+                                        <dt><img src="../pic/link001.jpg" alt=""></dt>
+                                        <dd>
+                                            <p class="power">500W Power Inverter - Red</p>
+                                            <p class="ship">Shipping: USPS Shipping</p>
+                                        </dd>
+                                    </dl>
+
+                                </div>
+                                <div class="shop_con_right">
+                                    <p class="ship_price">$29.99</p>
+                                    <p class="ship_num">x2</p>
+                                </div>
+                            </div>
+                            <div class="shop_con clearfix">
+                                <div class="shop_con_left">
+                                    <dl>
+                                        <dt><img src="../pic/link001.jpg" alt=""></dt>
+                                        <dd>
+                                            <p class="power">500W Power Inverter - Red</p>
+                                            <p class="ship">Shipping: USPS Shipping</p>
+                                        </dd>
+                                    </dl>
+
+                                </div>
+                                <div class="shop_con_right">
+                                    <p class="ship_price">$29.99</p>
+                                    <p class="ship_num">x2</p>
+                                </div>
+                            </div>                 
+                        </div>
+                        <!--结算金额开始-->
+                        <div class="setment">
+                            <ul>
+                                <li><span class="title">Sub-Total :</span><span class="price">$ 169.96</span></li>
+                                <li><span class="title">Shipping  :</span><span class="price">$ 0.00</span></li>
+                                <li><span class="title">Taxes :</span><span class="price">$ 0.00</span></li>
+                      
+                            </ul>
+
+                        </div>
+                        <div class="setment_z clearfix"><span class="title">Total :</span><span class="price">$ 169.96</span></div>
+                        <!--结算金额结束-->
+                        <div class="one_button mt30">
+                           <button>CONTINUE TO PAYMENT</button>
+                        </div>
+                    </div>
+               </div>
+               <!---order_view结束-->
+               <!---order_list开始--->
+               <div class="order_view_warp">
+                <div class="order_title order_change_bg">
+                    <h2>2、Order Review</h2> 
+                </div>
+                <div class="item_cart_con clearfix">
+                    <div class="item_cart">
+                        <h3>Item(s) in Cart(4)</h3>
+                        <a href="">Edit</a>
+                    </div>
+                    <div class="shop_list clearfix">
+                        <div class="shop_con clearfix">
+                            <div class="shop_con_left">
+                                <dl>
+                                    <dt><img src="../pic/link001.jpg" alt=""></dt>
+                                    <dd>
+                                        <p class="power">500W Power Inverter - Red</p>
+                                        <p class="ship">Shipping: USPS Shipping</p>
+                                    </dd>
+                                </dl>
+
+                            </div>
+                            <div class="shop_con_right">
+                                <p class="ship_price">$29.99</p>
+                                <p class="ship_num">x2</p>
+                            </div>
+                        </div>
+                        <div class="shop_con clearfix">
+                            <div class="shop_con_left">
+                                <dl>
+                                    <dt><img src="../pic/link001.jpg" alt=""></dt>
+                                    <dd>
+                                        <p class="power">500W Power Inverter - Red</p>
+                                        <p class="ship">Shipping: USPS Shipping</p>
+                                    </dd>
+                                </dl>
+
+                            </div>
+                            <div class="shop_con_right">
+                                <p class="ship_price">$29.99</p>
+                                <p class="ship_num">x2</p>
+                            </div>
+                        </div>
+                        <div class="shop_con clearfix">
+                            <div class="shop_con_left">
+                                <dl>
+                                    <dt><img src="../pic/link001.jpg" alt=""></dt>
+                                    <dd>
+                                        <p class="power">500W Power Inverter - Red</p>
+                                        <p class="ship">Shipping: USPS Shipping</p>
+                                    </dd>
+                                </dl>
+
+                            </div>
+                            <div class="shop_con_right">
+                                <p class="ship_price">$29.99</p>
+                                <p class="ship_num">x2</p>
+                            </div>
+                        </div>                 
+                    </div>
+                    <!--结算金额开始-->
+                    <div class="setment">
+                        <ul>
+                            <li><span class="title">Sub-Total :</span><span class="price">$ 169.96</span></li>
+                            <li><span class="title">Shipping  :</span><span class="price">$ 0.00</span></li>
+                            <li><span class="title">Taxes :</span><span class="price">$ 0.00</span></li>
+                  
+                        </ul>
+
+                    </div>
+                    <div class="setment_z clearfix"><span class="title">Total :</span><span class="price">$ 169.96</span></div>
+                    <!--结算金额结束-->
+                </div>
+               </div>
+               <!---order_list结束--->
+               <div class="three_step clearfix">
+                   <div class="three_title">
+                        <h2>3、Payment Method</h2> 
+                        <span>All transactions are secure and encrypted.</span>
+                   </div>
+                   <div class="three_con">
+                       <div class="pay_warp">
+                           <p class="pay_title">Pay with PayPal</p>
+                           <p class="pay_tip">You will now be redirected to PayPal's website.</p>
+                           <button>Check out with <img src="../images/pay.png"> </button>
+                       </div>
+                   </div>
+               </div>
+
+           </div>
+           <!--订单左边开始-->
+           <!--订单右边开始-->
+           <div class="order_right clearfix">
+                <div class="order_right_title">
+                    <h2>Order Summary</h2>
+                    <span>4item(s)</span>
+                </div>
+                <div class="order_right_con">
+                    <ul>
+                        <li class="clearfix">
+                            <p><span class="a1">500W Power Inverter-Red</span><span class="a2">$29.99</span></p>
+                            <p><span class="a3">Shipping:USPS Shipping</span><span class="a4">x2</span></p>
+                        </li>
+                        <li class="clearfix">
+                            <p><span class="a1">750W Power Inverter-Red</span><span class="a2">$29.99</span></p>
+                            <p><span class="a3">Shipping:USPS Shipping</span><span class="a4">x2</span></p>
+                        </li>
+                        <li class="clearfix">
+                            <p><span class="a1">1200W Power Inverter-Red</span><span class="a2">$29.99</span></p>
+                            <p><span class="a3">Shipping:USPS Shipping</span><span class="a4">x2</span></p>
+                        </li>
+
+                    </ul>
+                    <div class="order_right_price clearfix">
+                       <p class="clearfix"><span class="a1">Sub-Total:</span><span class="a2">$169.96</span></p>
+                       <p class="clearfix"><span class="a1">Shipping:</span><span class="a2">$0.00</span></p>
+                       <p class="clearfix"><span class="a1">Taxes:</span><span class="a2">$0.00</span></p>
+                    </div>
+                    <div class="order_total clearfix">
+                        <span class="a1">Sub-Total:</span><span class="a2">$169.96</span>
+                    </div>
+                </div>
+           </div>
+           <!--订单右边结束-->
+
+
+
+
+
+        </div>   
+            
+
+
+
+
+
+
+
+        <!--订单内容结束-->
+    </div>
+    <!---主要内容结束--->
+    <!---版权信息开始--->
+    <div class="copy_warp">
+            <div class="copy_box clearfix">
+                    <div class="copy_mian">
+                        <dl>
+                            <dt>Products</dt>
+                            <dd>
+                                <a href="">MSW Inverters</a>
+                                <a href="">PSW Inverters</a>
+                                <a href="">Jump Starter</a>
+                                <a href="">Battery Charger</a>
+                                <a href="">Power Station</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>About</dt>
+                            <dd>
+                                <a href="">Our Company</a>
+                                <a href="">Privacy Policy</a>
+                                <a href="">Terms & Conditions</a>
+                                <a href="">Blog</a>
+                                <a href="">Buy on Amazon</a>
+                                <a href="">Buy on eBay</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>Support</dt>
+                            <dd>
+                                <a href="">Download Manuals</a>
+                                <a href="">Guarantee & Return</a>
+                                <a href="">Shipping & Tracking</a>
+                            </dd>
+                        </dl>
+                        <dl style="width: 270px;">
+                            <dt>Contact Us</dt>
+                            <dd>
+                                <a href="">Emall : service@potekelec.com</a>
+                                <a href="">US（+1）302 261 8788 Mon-Fri 17PM-24PM</a>
+                                <a class="card_box" href="javascript:;">
+                                    <span class="b1"></span>
+                                    <span class="b2"></span>
+                                    <span class="b3"></span>
+                                    <span class="b4"></span>
+                                </a>
+                            </dd>
+                        </dl>
+                        <dl style="width: 290px; float: right;">
+                            <dt>Subscribe</dt>
+                            <dd>
+                                <a href="">Access excluslve offers, news, and more.</a>
+                                <div class="input_email"><input type="text" placeholder="Enter Your Email" value=""></div>
+                                <div class="swts_warp clearfix">
+                                    <div class="swts_left"><input type="text" placeholder="Enter Captcha" value=""></div>
+                                    <div class="swts_right">SWTS</div>
+                                </div>
+                                <div class="swts_checkbox"><input type="checkbox">By clicking ‘SUBSCRIBE’</div>
+                                <div class="swts_tip">you agree to the <a href="">Terms of Use</a> and <a href="">Privacy
+                                        Policy</a>.</div>
+                                <div class="swts_menu"><a href="">SUBSCRIBE</a></div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+    </div>
+    <div class="copy_bottom clearfix">
+        <div class="copybot_warp">
+            <div class="copybot_warp_left">
+                <ul>
+                    <li><img src="../images/card_00.png" alt=""></li>
+                    <li><img src="../images/card_02.png" alt=""></li>
+                    <li><img src="../images/card_01.png" alt=""></li>
+                    <li><img src="../images/card_04.png" alt=""></li>
+                    <li><img src="../images/card_05.png" alt=""></li>
+                    <li><img src="../images/card_06.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="copybot_warp_right">Copyright © 2019 Potek Electronics.,ltd</div>
+        </div>
+
+    </div>
+    <!---版权信息结束--->
+    <script src="../js/jquery-1.12.2.min.js"></script>
+    <script src="../js/common.js"></script>
+
+</body>
+
+</html>

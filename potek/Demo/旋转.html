@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../js/jquery-1.12.2.min.js"></script>
+    <title>Document</title>
+    <style>
+        .qiu{width: 20px;height: 20px;background-color: red;color: #fff;text-align: center;
+            line-height: 20px;float: right;margin-right: 20px;}
+    .qiu {
+    transition:All 0.4s ease-in-out;
+    -webkit-transition:All 0.4s ease-in-out;
+    -moz-transition:All 0.4s ease-in-out;
+    -o-transition:All 0.4s ease-in-out;
+}
+.qiucurr {
+    transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+    -moz-transform:rotate(135deg);
+    -o-transform:rotate(135deg);
+    -ms-transform:rotate(135deg);
+}
+    </style>
+    <script>
+  $(function(){
+
+    $(".qiu").click(function(){
+        $(this).addClass("qiucurr");
+    })
+  })
+    </script>
+</head>
+<body>
+    <div class="qiu">+</div>
+</body>
+</html>

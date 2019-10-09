@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/commonCart.css">
+    <link href="../css/products.css" rel="stylesheet">
+    <title>产品列表</title>
+</head>
+
+<body>
+    <!---search开始--->
+    <!-- <div class="head_top" style="position: fixed;z-index:5000;width: 100%;"> -->
+    <div class="header_warp">
+        <div class="header">
+            <ul>
+                <li class="a1">
+                    <div class="input_search clearfix">
+                        <div class="search_left"><input type="text" name="search" placeholder="search products"></div>
+                        <div class="search_right"><img src="../images/icon_search.png"></div>
+                    </div>
+                </li>
+                <li class="a2"><img src="../images/icon_re.png">
+                    <div class="sanjiao"></div>
+                    <ol>
+                        <li class="tmenu_ico_01"><a href="#">My Profile</a></li>
+                        <li class="tmenu_ico_02"><a href="#">My Orders</a></li>
+                        <li class="tmenu_ico_03"><a href="#">Log Out</a></li>
+                    </ol>
+                </li>
+                <li class="a3 openCart"><em><i class="fa fa-cart-plus fa-lg"></i> CART</em>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!---search结束--->
+    <!---导航开始--->
+    <div class="nav_bg">
+        <div class="nav_content">
+            <div class="nav_warp">
+                <div class="logo"><img src="../images/logo.png" alt="potek"></div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="">Inverters
+                                <div class="line"></div>
+                            </a>
+                            <dl>
+                                <dt>
+                                    <ol>
+                                        <ol><a href="#">Under 999 Watts</a></ol>
+                                        <ol><a href="#">1000 to 2999 Watts</a></ol>
+                                        <ol><a href="#">3000 Watts &Above</a></ol>
+                                    </ol>
+                                </dt>
+                                <dd><a href="#"><img src="../pic/ps_01.png" alt=""></a></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <a href="">PSW Inverters</a>
+                            <dl>
+                                <dt>
+                                    <a href="#">1000 Watts</a>
+                                </dt>
+                                <dd><a href="#"><img src="../pic/ps_01.png" alt=""></a></dd>
+                            </dl>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <a href="">Jump Starter</a>
+                            <dl>
+                                <dt>
+                                    <a href="#">900A Peak</a>
+                                    <a href="#">1000A Peak</a>
+                                    <a href="#">1500A Peak</a>
+                                </dt>
+                                <dd><a href="#"><img src="../pic/ps_01.png" alt=""></a></dd>
+                            </dl>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <a href="#">Battery Charger</a>
+                            <dl>
+                                <dt>
+                                    <a href="#">4A Battery Charger</a>
+                                    <a href="#">8A Battery Charger</a>
+                                    <a href="#">16A Battery Charger</a>
+                                </dt>
+                                <dd><a href="#"><img src="../pic/ps_01.png" alt=""></a></dd>
+                            </dl>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <a href="#">Other Products</a>
+                            <dl>
+                                <dt>
+                                    <a href="#">Power Station</a>
+                                    <a href="#">Accessories</a>
+                                </dt>
+                                <dd><a href="#"><img src="../pic/ps_01.png" alt=""></a></dd>
+                            </dl>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                            <dl>
+                                <dt>
+                                    <a href="#">Manuals & Drivers</a>
+                                    <a href="#">Warranty Agreement</a>
+                                    <a href="#">Privacy Policy</a>
+                                </dt>
+                                <dd><a href="#"><img src="../pic/ps_01.png" alt=""></a></dd>
+                            </dl>
+                            <div class="line"></div>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                            <dl>
+                                <dt>
+                                    <a href="#">Our Company</a>
+                                    <a href="#">Buy at Amazon</a>
+                                    <a href="#">Buy at ebay</a>
+                                </dt>
+                                <dd><a href="#"><img src="../pic/ps_01.png" alt=""></a></dd>
+                            </dl>
+                            <div class="line"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu_line"></div>
+        </div>
+    </div>
+    <!---导航结束--->
+    <!--cartwarp-start-->
+    <div class="J-global-toolbar">
+        <div class="toolbar-wrap J-wrap">
+            <div class="toolbar">
+                <div class="toolbar-panels J-panel">
+                    <div style="visibility: hidden;"
+                        class="J-content toolbar-panel tbar-panel-cart toolbar-animate-out">
+                        <h3 class="tbar-panel-header J-panel-header">
+                            <a href="" class="title"><i></i><em class="title">My Cart</em></a>
+                            <span class="close-panel J-close openCart"></span>
+                        </h3>
+                        <div class="tbar-panel-main">
+                            <div class="tbar-panel-content J-panel-content">
+                                <div id="J-cart-tips" class="tbar-tipbox hide">
+                                    <div class="tip-inner">
+                                        <span class="tip-text">还没有登录，登录后商品将被保存</span>
+                                        <a href="#none" class="tip-btn J-login">登录</a>
+                                    </div>
+                                </div>
+                                <div id="J-cart-render">
+                                    <div class="tbar-cart-list">
+                                        <div class="tbar-cart-item">
+                                            <div class="jtc-item-goods">
+                                                <span class="p-img"><a href="#" target="_blank"><img
+                                                            src="http://img14.360buyimg.com/n5/g10/M00/00/14/rBEQWFEAilIIAAAAAACGm9ueTbUAAAH7gB8kskAAIaz106.jpg"
+                                                            alt="美的（Midea） BCD-206TM(E) 206升静音/省电/三门冰箱（闪白银）" height="50"
+                                                            width="50" /></a></span>
+                                                <div class="p-name">
+                                                    <a href="#">PowerPort Atom III </a>
+                                                </div>
+                                                <div class="p-price"><strong>¥1398.00</strong>×1 </div>
+                                                <a href="#none" class="p-del J-del fa fa-trash-o fa-lg" alt="Delete"
+                                                    title="Delete"></a>
+                                            </div>
+                                            <div class="jtc-item-goods">
+                                                <span class="p-img"><a href="#" target="_blank"><img
+                                                            src="http://img14.360buyimg.com/n5/g10/M00/00/14/rBEQWFEAilIIAAAAAACGm9ueTbUAAAH7gB8kskAAIaz106.jpg"
+                                                            alt="美的（Midea） BCD-206TM(E) 206升静音/省电/三门冰箱（闪白银）" height="50"
+                                                            width="50" /></a></span>
+                                                <div class="p-name">
+                                                    <a href="#">PowerPort Atom III </a>
+                                                </div>
+                                                <div class="p-price"><strong>¥1398.00</strong>×1 </div>
+                                                <a href="#none" class="p-del J-del fa fa-trash-o fa-lg" alt="Delete"
+                                                    title="Delete"></a>
+                                            </div>
+                                            <div class="jtc-item-goods">
+                                                <span class="p-img"><a href="#" target="_blank"><img
+                                                            src="http://img14.360buyimg.com/n5/g10/M00/00/14/rBEQWFEAilIIAAAAAACGm9ueTbUAAAH7gB8kskAAIaz106.jpg"
+                                                            alt="美的（Midea） BCD-206TM(E) 206升静音/省电/三门冰箱（闪白银）" height="50"
+                                                            width="50" /></a></span>
+                                                <div class="p-name">
+                                                    <a href="#">PowerPort Atom III </a>
+                                                </div>
+                                                <div class="p-price"><strong>¥1398.00</strong>×1 </div>
+                                                <div class="numwarp">
+                                                    <a><i class="fa fa-minus"></i></a><input autocomplete="off"
+                                                        type="text" maxlength="20" value="9"><a><i
+                                                            class="fa fa-plus"></i></a>
+                                                </div> <a href="#none" class="p-del J-del fa fa-trash-o fa-lg"
+                                                    alt="Delete" title="Delete"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tbar-panel-footer J-panel-footer">
+                            <div class="tbar-checkout">
+                                <div class="jtc-number"> <strong class="J-count">0</strong> item(s)</div>
+                                <div class="jtc-sum"> Total：<strong class="J-total">¥113</strong> </div>
+                                <a class="jtc-btn J-btn" href="#none" target="_blank">check out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="toolbar-footer">
+                    <div class="toolbar-tab tbar-tab-top"> <a href="#"> <i class="tab-ico  "></i> <em
+                                class="footer-tab-text">Top</em> </a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--cartwarp-end-->
+
+    <!---产品开始--->
+    <div class="cleardiv"></div>
+    <div class="pro_bg clearfix">
+        <div class="pro_warp clearfix">
+            
+            </div>
+        </div>
+
+
+    </div>
+    <!---产品结束--->
+    <!---产品详情开始--->
+    <!---产品详情结束--->
+    <!---版权信息开始--->
+    <div class="copy_warp">
+        <div class="copy_box clearfix">
+            <div class="copy_mian">
+                <dl>
+                    <dt>Products</dt>
+                    <dd>
+                        <a href="">MSW Inverters</a>
+                        <a href="">PSW Inverters</a>
+                        <a href="">Jump Starter</a>
+                        <a href="">Battery Charger</a>
+                        <a href="">Power Station</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>About</dt>
+                    <dd>
+                        <a href="">Blog</a>
+                        <a href="">Our Company</a>
+                        <a href="">Contact Us</a>
+                        <a href="">Buy at Amazon</a>
+                        <a href="">Buy at eBay</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>Support</dt>
+                    <dd>
+                        <a href="">Download Documents</a>
+                        <a href="">Process a Warranty</a>
+                        <a href="">Terms of Use</a>
+                    </dd>
+                </dl>
+                <dl style="width: 270px;">
+                    <dt>Contact Us</dt>
+                    <dd>
+                        <a href="">Emall : service@potekelec.com</a>
+                        <a href="">US（+1）302 261 8788 Mon-Fri 17PM-24PM</a>
+                        <a class="card_box" href="javascript:;">
+                            <span class="b1"></span>
+                            <span class="b2"></span>
+                            <span class="b3"></span>
+                            <span class="b4"></span>
+                        </a>
+                    </dd>
+                </dl>
+                <dl style="width: 290px; float: right;">
+                    <dt>Subscribe</dt>
+                    <dd>
+                        <a href="">Access excluslve offers, news, and more.</a>
+                        <div class="input_email"><input type="text" placeholder="Enter Your Email" value=""></div>
+                        <div class="swts_warp clearfix">
+                            <div class="swts_left"><input type="text" placeholder="Enter Captcha" value=""></div>
+                            <div class="swts_right">SWTS</div>
+                        </div>
+                        <div class="swts_checkbox"><input type="checkbox">By clicking ‘SUBSCRIBE’</div>
+                        <div class="swts_tip">you agree to the <a href="">Terms of Use</a> and <a href="">Privacy
+                                Policy</a>.</div>
+                        <div class="swts_menu"><a href="">SUBSCRIBE</a></div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="copy_bottom clearfix">
+        <div class="copybot_warp">
+            <div class="copybot_warp_left">
+                <ul>
+                    <li><img src="../images/card_00.png" alt=""></li>
+                    <li><img src="../images/card_02.png" alt=""></li>
+                    <li><img src="../images/card_01.png" alt=""></li>
+                    <li><img src="../images/card_04.png" alt=""></li>
+                    <li><img src="../images/card_05.png" alt=""></li>
+                    <li><img src="../images/card_06.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="copybot_warp_right">Copyright © 2019 Potek Electronics.,ltd</div>
+        </div>
+
+    </div>
+    <!---版权信息结束--->
+    <script src="../js/jquery-1.12.2.min.js"></script>
+    <script src="../js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+.none {display:none; }
+.fixed_top {width:100%; position: fixed; top:0;}
+.mt50 {margin-top:50px; }
+.mt10 {margin-top:10px; }
+.mb15 {margin-bottom:15px; }
+.mr10 {margin-right: 10px; }
+.mr30 {margin-right: 30px;}
+.mr5 {margin-right:5px;}
+.p10 {padding:10px; }
+.pr5 {padding-right: 5px;}
+.pr10 {padding-right:10px; }
+.pr60 {padding-right: 60px; }
+.mt5 {margin-top:5px; }
+.ml15 {margin-left:15px; }
+.inline {display:inline-block; }
+.width150 {width: 150px!important; }
+.width100 {width: 100px !important;}
+.min_width110 {min-width: 110px!important;}
+
+
+.font_col1 {color: #d2d2d2!important;}
+
+.manage_info ul li {font-size: 14px; color: #666; line-height: 25px; }
+.treeview-menu > li > a { padding: 10px 5px 10px 15px; }
+.content-header > h1 {font-size: 16px; }
+.ipnut-width input {margin-left: 0.5em; display: inline-block; width: auto;}
+.btn_bottom_line {height: 50px; border-bottom:solid 1px #ddd; margin-bottom:20px; }
+.no_top_line {border-top: none!important;}
+
+.custom_ts input[type='checkbox'] {margin-right: 5px; }
+
+.add-user {font-size: 16px!important; }
+.add-user i {font-size: 14px; }
+.column_edit thead tr th {background:#ececec!important; }
+.line_edit thead tr th {background:#ececec!important;}
+.control-label em {color: #ff0000; padding-left:5px; }
+.checkbox-js {cursor: pointer;}
+.treeview ul li {}
+.treeview ul li:hover {background: #f5f5f5;}
+.treeview_nav li {padding-left:15px; }
+.treeview_bg h3 {font-size:14px!important; }
+.text-center {text-align: center!important;}
+.register_font a {height:30px; line-height: 30px; margin:0px 5px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

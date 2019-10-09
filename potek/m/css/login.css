@@ -1,0 +1,81 @@
+.pro_warp { margin: 0px auto; }
+.login_box { min-height: 450px; margin:50px 0 20px 0; padding: 20px; }
+/*login*/
+.login_box h2 {font-size: 24x; font-weight: bold; text-align: center; }
+.login_list {}
+.login_list label {display: block; font-size: 16px; color: #999; margin-top:15px;}
+.login_list label em {color: #ff0000; font-weight: bold; margin-left: 8px;}
+.login_list input {display: block; margin-top: 10px; width:94%; height: 39px; padding: 0px 10px; font-size: 14px; border: solid 1px #ddd; border-radius: 5px;}
+
+.login_tip {margin-top: 5px;}
+.login_tip .login_tip_l {float: left; }
+.login_tip .login_tip_l input {border: solid 1px #999;}
+.login_tip .login_tip_l em {padding-left: 5px; font-style: normal; color: #999;}
+.login_tip .login_tip_r {float: right;}
+.login_tip .login_tip_r a {color: #fd6c00; text-decoration: none; font-size: 12px; cursor: pointer;}
+.login_tip .login_tip_r a:hover {color: #666;}
+.log_in {margin-top: 40px;}
+.log_in button {width: 100%; height: 36px; background: #ff881e; font-size: 16px; border:none; border-radius:5px; color: #fff;}
+.log_in button:hover {background: #ff6c00; }
+.log_or {margin-top: 15px; text-align: center;}
+.log_or img { width: 120px;}
+
+.sign_google { margin-top:20px;}
+.sign_google button { width: 100%; height: 36px; background:#ed422c; font-size: 16px; border: none; border-radius: 5px; color: #fff;}
+.sign_google button i {margin-right:5px;}
+.sign_google button i img { width: 28px;}
+.sign_google button:hover {background:#cc3a27; }
+
+.sign_facebook {margin-top:15px;}
+.sign_facebook button {width: 100%; height: 36px; background:#4267b2; font-size: 16px; border: none; border-radius: 5px; color: #fff;}
+.sign_facebook button i {margin-right:8px; display:inline-block;}
+.sign_facebook button i img {height:23px; }
+.sign_facebook button:hover {background:#395999; }
+.login_tips {font-size: 14px; margin-top:20px; color: #666;}
+.login_tips a {font-size: 16px; color: #ff881e; text-decoration: none; font-weight: bold; padding-left: 10px; cursor: pointer;}
+.login_tips a:hover {color: #666;}
+
+/*login retrieve*/
+.login_box p {font-size: 12px; color: #999; padding-top:15px; text-align:center;}
+.login_cancel {margin-top: 15px; text-align:center;}
+.login_cancel a {font-size: 14px; color: #999; text-decoration: underline; cursor: pointer;}
+.login_cancel a:hover {text-decoration: none;}
+
+/*login register*/
+.position {position:relative; }
+.login_list i {width: 50px; height: 30px; display: inline-block; position: absolute; right: 0px; top: 41px; cursor: pointer;color: #d7d7d7;
+font-size: 30px; line-height: 30px;z-index: 1000;}
+.login_list span {width: 70px; height: 39px; display:inline-block; position: absolute; right: -1px; top:37px; cursor: pointer; border-left: solid 1px #ddd; line-height:39px; text-align:center; color:#0004c7; center; }
+.login_tip_l a {color:#ff891f; text-decoration:none; cursor: pointer; }
+.login_tip_l a:hover {color:#666;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,147 @@
+/* 清除内外边距 */
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,figure,figure,legend,textarea,p,blockquote,th,td,input,label {
+margin: 0; padding: 0;font-family: "Microsoft YaHei";word-wrap: break-word; font-weight: normal;}
+html {-ms-touch-action: none;}
+li {list-style: none;}
+img {border: none;}
+a,a:link,a:active,a:visited,a:hover{text-decoration: none;color: inherit; cursor: pointer; }
+input {outline: medium;}
+input[type=button],input[type=submit],input[type=file],button {cursor: pointer;-webkit-appearance: none;outline: none;}
+article,aside,details,figcaption,figure,footer,header,menu,nav,section {display: block;}
+.clearfix:after {clear: both;height: 0;overflow: hidden;display: block;visibility: hidden;content: "."; font-size: 0;}
+.clearfix {zoom: 1;}
+a { text-decoration: none; font-family: "Microsoft YaHei"; }
+:focus { outline: 0; }
+.pa {position:absolute;}
+.pr{position:relative;}
+.pf{position: fixed;}
+.fl {float: left;_display: inline;}
+.fr {float: right;_display: inline;}
+.ovh {overflow: hidden;}
+.vh {visibility: hidden;}
+.none {display:none;}
+/* 设置默认字体 */
+body,button, input, select, textarea {
+    font: 16px/22px "Microsoft YaHei";color: #666;
+}
+
+h1 {font-size: 18px;}
+h2 {font-size: 16px;}
+h3 {font-size: 14px;}
+h4, h5, h6 {font-size: 100%;}
+* h1,* h2,* h3,* h4,* h5,* h6{margin: 0px;} /*覆盖bootstrape对标题加的默认外边距*/
+
+address, cite, dfn, em, i, var {font-style: normal;} /* 斜体扶正 */
+
+/* 重置列表元素 */
+ul, ol ,li{list-style: none;}
+
+/* 重置文本格式元素 */
+a {text-decoration: none; color: #333; word-wrap:break-word;}/*英文换行*/
+a:hover {text-decoration: none; color:#333;}
+
+
+/* 重置表单元素 */
+legend {color: #000;} /* for ie6 */
+fieldset, img {border: none;} /* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+    font-size: 100%; /* 使表单元素在 ie 下能继承字体大小 */
+}
+
+/*页面整体布局*/
+.warp {max-width: 680px; min-width: 320px; margin: 0px auto;  }
+
+.g_hd {width: 100%; height: 5rem; margin: 0px auto; position: relative; }
+.g_hd h1 {position: absolute; top: 0px; left: 0px; display: inline-block; margin: 0.6rem 0 0 1rem; z-index: 1;;  }
+.g_hd .m_nav {width:45%; position: absolute; padding: 0 0 0 40%; z-index: 10;  }
+.g_hd .m_nav ul li {width: 50%; float: left; height: 5rem; line-height: 5rem; text-align: center; }
+.g_hd .m_nav ul li a {font-size: 1.3rem; color: #333; }
+.m_nav2 {width: 1.8rem; float: right; padding:1.9rem 2rem 0 0; }
+.m_nav2 .erji {width: 100%; position: absolute; top: 5rem; right: 0rem; z-index: 100; background: rgb(0,0,0,0.8); padding:2rem 0;   }
+.m_nav2 .erji ul li {height: 4rem; line-height: 4rem; text-align: center; border-bottom: solid 1px #d9d9d9;}
+.m_nav2 .erji ul li a {display: block; font-size: 1.4rem; color: #fff; }
+.m_nav2 .erji .m-tel {width: 52%; height: 3rem; line-height: 3rem; border-radius: 5rem; background: #009944; text-align:center; display:block; margin: 2rem auto; color: #fff; font-size: 1.4rem;}
+
+
+section {width: 100%; }
+.banner { }
+.swiper-slide .banner-item { display: block; height: 100%; position: relative; background-size: cover; background-position: center;  background-repeat: no-repeat;  width: 680px; height:600px;}
+.s_gif {padding-top:2.3rem; }
+.s_tit {text-align:center; font-size: 1.2rem; line-height: 2.2rem; color: #333;}
+.s_tit b {display: block; font-size: 2rem;}
+.s_list {padding-top: 2rem; }
+.s_list dl {width: 48%; float: left; background: #efefef; margin: 0.2rem 0.2rem;  text-align: center; padding: 1.6rem 0;  }
+.s_list dl dt { }
+.s_list dl dt img {box-shadow: 0 3px 5px 3px rgba(0,0,0,0.1); border-radius: 50%;}
+.s_list dl dd { padding-top: 1rem;  }
+.s_list dl dd b {font-size: 1.2rem; color: #000; }
+.s_list dl dd b span {color: #009944; }
+.s_list dl dd p {padding-top: 0.7rem; font-size: 1rem; line-height:1.4rem; color: #333; }
+.s_btn { width: 50%; height: 3.3rem; margin: 2rem auto; background: url(../images/yin_btn.gif) no-repeat;  }
+.s_btn a {display: block;  font-size: 1rem; color: #fff; padding:0.5rem 0 0 1.5rem; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.g_ft {width: 100%; height: 8rem; background: #e9e9e9; padding: 1rem 0 0 0;}
+.g_ft h3 {width: 4rem; height: 4rem; position: fixed; z-index: 999; bottom:6.5rem; right:0.5rem; }
+.fwz {font-size: 0.8rem; line-height: 1.7rem; color: #666; text-align: center; }
+.fnav {width: 100%; max-width: 680px; min-width: 320px; height: 3.5rem; line-height: 3.5rem; background: #333; position:fixed; bottom: 0;  z-index: 50;}
+.fnav ul li {width:25%; float: left; text-align: center; font-size: 1rem; position: relative; }
+.fnav ul li:before {content: ""; display: inline-block;  width: 1px; height: 8px;  background: #7b7b7b;  position: absolute;  right: 0; top: 1.7rem; z-index: -1;}
+.fnav ul li:first-child::before {display: none}
+.fnav ul li a { color: #fff; display: block;  }
+.fnav ul li a.f_tel {background: #009944; }
+
+
+
+/**/
+html {font-size: 10px;-webkit-text-size-adjust: none;}
+@media screen and (min-width: 320px) {html {font-size: 10px;}}
+@media screen and (min-width: 360px) {html {font-size: 11.25px;}}
+@media screen and (min-width: 375px) {html {font-size: 11.7px;}}  /*ipone6*/
+@media screen and (min-width: 400px) {html {font-size: 12.5px;}}
+@media screen and (min-width: 414px) {html {font-size: 12.94px;}} /*ipone6P*/
+@media screen and (min-width: 440px) {html {font-size: 13.75px;}}
+@media screen and (min-width: 480px) {html {font-size: 15px;}}
+@media screen and (min-width: 520px) {html {font-size: 16.25px;}}
+@media screen and (min-width: 560px) {html {font-size: 17.5px;}}
+@media screen and (min-width: 600px) {html {font-size: 18.75px;}}
+@media screen and (min-width: 640px) {html {font-size: 20px;}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>css3炫酷进度条动画|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+	<style type="text/css">
+		.demo{
+			padding: 2em;
+			background: #fff;
+		}
+		.progress{
+		    height: 20px;
+		    background: #fff;
+		    border-radius: 15px 0 0 15px;
+		    box-shadow: none;
+		    margin: 20px 50px 40px 100px;
+		    overflow: visible;
+		    position: relative;
+		}
+		.progress .progress-title{
+		    display: block;
+		    font-size: 18px;
+		    font-weight: 700;
+		    color: #205580;
+		    position: absolute;
+		    bottom: -3px;
+		    left: -90px;
+		}
+		.progress .progress-bar{
+		    background: #fff;
+		    box-shadow: none;
+		    border-radius: 15px 0 0 15px;
+		    position: relative;
+		    -webkit-animation: animate-positive 2s;
+		    animation: animate-positive 2s;
+		}
+		.progress .progress-bar:before{
+		    content: "";
+		    border-top: 20px solid transparent;
+		    border-bottom: 20px solid transparent;
+		    position: absolute;
+		    top: -10px;
+		    right: -20px;
+		}
+		.progress .progress-value{
+		    display: block;
+		    font-size: 18px;
+		    font-weight: 700;
+		    color: #205580;
+		    position: absolute;
+		    bottom: -5px;
+		    right: -50px;
+		}
+		.progress.pink .progress-bar:before{ border-left: 20px solid #ff4a98; }
+		.progress.blue .progress-bar:before{ border-left: 20px solid #2c5af9; }
+		.progress.green .progress-bar:before{ border-left: 20px solid #7cf210; }
+		.progress.orange .progress-bar:before{ border-left: 20px solid #ff5f25; }
+		@-webkit-keyframes animate-positive{
+		    0% { width: 0; }
+		}
+		@keyframes animate-positive{
+		    0% { width: 0; }
+		}
+	</style>
+</head>
+<body>
+	<div class="htmleaf-container">
+		
+		<div class="demo">
+		        <div class="container">
+		            <div class="row text-center">
+		                <h1 class="white">进度条示例</h1>
+		            </div>
+
+		            <div class="row">
+		                <div class="col-md-offset-3 col-md-6">
+		                    <div class="progress pink">
+		                        <h3 class="progress-title">HTML5</h3>
+		                        <div class="progress-value">90%</div>
+		                        <div class="progress-bar" style="width:90%; background:linear-gradient(to right,#f791bd,#ff4a98);"></div>
+		                    </div>
+
+		                    <div class="progress green">
+		                        <h3 class="progress-title">CSS3</h3>
+		                        <div class="progress-value">50%</div>
+		                        <div class="progress-bar" style="width: 50%;  background:linear-gradient(to right,#baf883,#7CF210);"></div>
+		                    </div>
+
+		                    <div class="progress blue">
+		                        <h3 class="progress-title">J-Query</h3>
+		                        <div class="progress-value">80%</div>
+		                        <div class="progress-bar" style="width:80%; background:linear-gradient(to right,#7E9AFB,#2C5AF9);"></div>
+		                    </div>
+
+		                    <div class="progress orange">
+		                        <h3 class="progress-title">Bootstrap</h3>
+		                        <div class="progress-value">65%</div>
+		                        <div class="progress-bar" style="width:65%; background:linear-gradient(to right,#FF8E65,#FF5F25);"></div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+	</div>
+	
+</body>
+</html>
