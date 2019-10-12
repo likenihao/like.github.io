@@ -1,4 +1,4 @@
-body {min-width: 1200px; width: 100%; background: #f5f5f5;}
+body {min-width: 1200px; width: 100%; background: #f5f5f5; overflow:hidden;}
 .brand_m dl dd img,.ys_list dl dt img,.new_img img { -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; }
 .brand_m dl dd img:hover,.ys_list dl dt img:hover,.new_img img:hover {-webkit-transform:scale(1.1); -moz-transform:scale(1.1); -ms-transform:scale(1.1); transform:scale(1.1);}
 /*头部开始*/
